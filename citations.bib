@@ -1,0 +1,228 @@
+@misc{rocm,
+  author       = {AMD},
+  title        = {{AMD} {ROCm}™ {Software}},
+  howpublished = {\url{https://www.amd.com/en/products/software/rocm.html}}
+}
+
+@misc{hip,
+  author       = {AMD ROCm},
+  title        = {{HIP} documentation},
+  howpublished = {\url{https://rocm.docs.amd.com/projects/HIP/en/latest/}}
+}
+
+@misc{hip-github,
+  author       = {AMD ROCm},
+  title        = {{HIP} {GitHub} repository},
+  howpublished = {\url{https://github.com/ROCm/HIP}}
+}
+
+@misc{hipify,
+  author       = {AMD ROCm},
+  title        = {{HIPIFY} {Documentation}},
+  howpublished = {\url{https://rocmdocs.amd.com/projects/HIPIFY/en/latest/}}
+}
+
+@misc{cuda,
+  author       = {{NVIDIA}},
+  title        = {{CUDA} {Toolkit}},
+  howpublished = {\url{https://developer.nvidia.com/cuda-toolkit}}
+}
+
+@misc{nvprof,
+  author       = {{NVIDIA}},
+  title        = {{NVIDIA} {Visual} {Profiler}},
+  howpublished = {\url{https://developer.nvidia.com/nvidia-visual-profiler}}
+}
+
+@misc{cudagdb,
+  author       = {{NVIDIA}},
+  title        = {{CUDA-GDB}},
+  howpublished = {\url{https://developer.nvidia.com/cuda-gdb}}
+}
+
+@misc{compsan,
+  author       = {{NVIDIA}},
+  title        = {{NVIDIA} {Compute} {Sanitizer}},
+  howpublished = {\url{https://developer.nvidia.com/compute-sanitizer}}
+}
+
+@misc{rocprofiler,
+  author       = {{AMD ROCm}},
+  title        = {{ROC profiler library}},
+  howpublished = {\url{https://github.com/ROCm/rocprofiler}}
+}
+
+@misc{rocgdb,
+  author       = {{AMD ROCm}},
+  title        = {{AMD} {ROCm} {Debugger} {(ROCgdb)}},
+  howpublished = {\url{https://rocm.docs.amd.com/projects/ROCgdb/en/latest/}}
+}
+
+@misc{asan-amdgpu,
+  author       = {{AMD ROCm}},
+  title        = {{Using the LLVM ASan on a GPU (beta release)}},
+  year         = {2024},
+  howpublished = {\url{https://rocm.docs.amd.com/en/latest/conceptual/using-gpu-sanitizer.html}}
+}
+
+@misc{asan-patch-amd,
+  author       = {{LLVM Phabricator}},
+  title        = {{[ASAN][AMDGPU] Add support for accesses to global and constant addrspaces}},
+  year         = {2021},
+  howpublished = {{\url{https://reviews.llvm.org/D99071}}}
+}
+
+@misc{triple,
+  author       = {{LLVM Docs}},
+  title        = {{llvm::Triple Class Reference}},
+  howpublished = {\url{https://llvm.org/doxygen/classllvm_1_1Triple.html#details}}
+}
+
+@misc{llvm-amd-docs,
+  author       = {{LLVM}},
+  title        = {{User Guide for AMDGPU Backend}},
+  howpublished = {\url{https://llvm.org/docs/AMDGPUUsage.html}}
+}
+
+@misc{amd-llvm-fork,
+  author       = {{AMD ROCm}},
+  title        = {{AMD's LLVM fork}},
+  howpublished = {\url{https://github.com/ROCm/llvm-project}}
+}
+
+@inproceedings{mlir,
+  author    = {Lattner, Chris and Amini, Mehdi and Bondhugula, Uday and Cohen, Albert and Davis, Andy and Pienaar, Jacques and Riddle, River and Shpeisman, Tatiana and Vasilache, Nicolas and Zinenko, Oleksandr},
+  booktitle = {2021 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+  title     = {MLIR: Scaling Compiler Infrastructure for Domain Specific Computation},
+  year      = {2021},
+  volume    = {},
+  number    = {},
+  pages     = {2-14},
+  keywords  = {Program processors;Buildings;Semantics;Hardware;Software;Generators;Optimization},
+  doi       = {10.1109/CGO51591.2021.9370308}
+}
+
+@inproceedings{tsan,
+  author    = {Serebryany, Konstantin and Iskhodzhanov, Timur},
+  title     = {ThreadSanitizer: data race detection in practice},
+  year      = {2009},
+  isbn      = {9781605587936},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/1791194.1791203},
+  doi       = {10.1145/1791194.1791203},
+  abstract  = {Data races are a particularly unpleasant kind of threading bugs. They are hard to find and reproduce -- you may not observe a bug during the entire testing cycle and will only see it in production as rare unexplainable failures. This paper presents ThreadSanitizer -- a dynamic detector of data races. We describe the hybrid algorithm (based on happens-before and locksets) used in the detector. We introduce what we call dynamic annotations -- a sort of race detection API that allows a user to inform the detector about any tricky synchronization in the user program. Various practical aspects of using ThreadSanitizer for testing multithreaded C++ code at Google are also discussed.},
+  booktitle = {Proceedings of the Workshop on Binary Instrumentation and Applications},
+  pages     = {62-71},
+  numpages  = {10},
+  keywords  = {testing, dynamic data race detection, concurrency bugs, Valgrind},
+  location  = {New York, New York, USA},
+  series    = {WBIA '09}
+}
+
+@misc{tsan-llvm,
+  author       = {{Clang Documentation}},
+  title        = {{ThreadSanitizer}},
+  howpublished = {\url{https://clang.llvm.org/docs/ThreadSanitizer.html}}
+}
+
+@misc{shadow-state,
+  author       = {{Google}},
+  title        = {{ThreadSanitizerAlgorithm: Shadow State}},
+  howpublished = {\url{https://github.com/google/sanitizers/wiki/ThreadSanitizerAlgorithm#shadow-state}}
+}
+
+  @misc{happens-before,
+  author       = {{Wikipedia contributors}},
+  title        = {Happened-before --- {Wikipedia}{,} The Free Encyclopedia},
+  year         = {2024},
+  howpublished = {\url{https://en.wikipedia.org/w/index.php?title=Happened-before&oldid=1197656002}},
+  note         = {[Online; accessed 10-May-2024]}
+}
+
+@misc{xnack,
+  author       = {{niconiconi}},
+  title        = {{What is XNACK on AMD GPUs, and How to Enable the Feature}},
+  year         = {2023},
+  howpublished = {\url{https://niconiconi.neocities.org/tech-notes/xnack-on-amd-gpus/}}
+}
+
+@misc{amd-xnack,
+  author       = {{AMD GPUOpen}},
+  title        = {{AMD Instinct™ MI200 GPU memory space overview: Enabling page migration}},
+  year         = {2023},
+  howpublished = {\url{https://gpuopen.com/learn/amd-lab-notes/amd-lab-notes-mi200-memory-space-overview/#enabling-page-migration}}
+}
+
+@misc{amdgcn,
+  author       = {{Wikipedia contributors}},
+  title        = {Graphics Core Next --- {Wikipedia}{,} The Free Encyclopedia},
+  year         = {2024},
+  howpublished = {\url{https://en.wikipedia.org/w/index.php?title=Graphics_Core_Next&oldid=1221396170}},
+  note         = {[Online; accessed 12-May-2024]}
+}
+
+@misc{iitk,
+  title         = {Predictive Data Race Detection for GPUs},
+  author        = {Sagnik Dey and Mayant Mukul and Parth Sharma and Swarnendu Biswas},
+  year          = {2021},
+  eprint        = {2111.12478},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.PL}
+}
+
+@misc{nvbit,
+  author       = {{NVlabs}},
+  title        = {{NVBit}},
+  howpublished = {\url{https://github.com/NVlabs/NVBit}}
+}
+
+@article{barracuda,
+  author     = {Eizenberg, Ariel and Peng, Yuanfeng and Pigli, Toma and Mansky, William and Devietti, Joseph},
+  title      = {BARRACUDA: binary-level analysis of runtime RAces in CUDA programs},
+  year       = {2017},
+  issue_date = {June 2017},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {52},
+  number     = {6},
+  issn       = {0362-1340},
+  url        = {https://doi.org/10.1145/3140587.3062342},
+  doi        = {10.1145/3140587.3062342},
+  abstract   = {GPU programming models enable and encourage massively parallel programming with over a million threads, requiring extreme parallelism to achieve good performance. Massive parallelism brings significant correctness challenges by increasing the possibility for bugs as the number of thread interleavings balloons. Conventional dynamic safety analyses struggle to run at this scale.  We present BARRACUDA, a concurrency bug detector for GPU programs written in Nvidia's CUDA language. BARRACUDA handles a wider range of parallelism constructs than previous work, including branch operations, low-level atomics and memory fences, which allows BARRACUDA to detect new classes of concurrency bugs. BARRACUDA operates at the binary level for increased compatibility with existing code, leveraging a new binary instrumentation framework that is extensible to other dynamic analyses. BARRACUDA incorporates a number of novel optimizations that are crucial for scaling concurrency bug detection to over a million threads.},
+  journal    = {SIGPLAN Not.},
+  month      = {jun},
+  pages      = {126-140},
+  numpages   = {15},
+  keywords   = {data race detection, GPUs, CUDA}
+}
+
+@inproceedings{iguard,
+  author    = {Kamath, Aditya K. and Basu, Arkaprava},
+  title     = {iGUARD: In-GPU Advanced Race Detection},
+  year      = {2021},
+  isbn      = {9781450387095},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3477132.3483545},
+  doi       = {10.1145/3477132.3483545},
+  abstract  = {Newer use cases of GPU (Graphics Processing Unit) computing, e.g., graph analytics, look less like traditional bulk-synchronous GPU programs. To cater to the needs of emerging applications with semantically richer and finer grain sharing patterns, GPU vendors have been introducing advanced programming features, e.g., scoped synchronization and independent thread scheduling. While these features can speed up many applications and enable newer use cases, they can also introduce subtle synchronization errors if used incorrectly.We present iGUARD, a runtime software tool to detect races in GPU programs due to incorrect use of such advanced features. A key need for a race detector to be practical is to accurately detect races at reasonable overheads. We thus perform the race detection on the GPU itself without relying on the CPU. The GPU's parallelism helps speed up race detection by 15x over a closely related prior work. Importantly, iGUARD detects newer types of races that were hitherto not possible for any known tool. It detected previously unknown subtle bugs in popular GPU programs, including three in NVIDIA supported commercial libraries. In total, iGUARD detected 57 races in 21 GPU programs, without false positives.},
+  booktitle = {Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles},
+  pages     = {49-65},
+  numpages  = {17},
+  keywords  = {GPU program correctness, Debugging, Data races},
+  location  = {Virtual Event, Germany},
+  series    = {SOSP '21}
+}
+
+@inproceedings{scord,
+  author    = {Kamath, Aditya K. and George, Alvin A. and Basu, Arkaprava},
+  booktitle = {2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)},
+  title     = {ScoRD: A Scoped Race Detector for GPUs},
+  year      = {2020},
+  volume    = {},
+  number    = {},
+  pages     = {1036-1049},
+  keywords  = {Graphics processing units;Parallel programming;Software debugging},
+  doi       = {10.1109/ISCA45697.2020.00088}
+}
