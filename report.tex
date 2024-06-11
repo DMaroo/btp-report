@@ -1786,7 +1786,7 @@ The implementation is just a prototype as of now, and is far from complete. This
 The implementation is incomplete in its current state. To complete it, the following needs to be done.
 
 \begin{itemize}
-	\item \texttt{tsanrtl} \textbf{as a device library}: ThreadSanitizer's runtime library (containing all the hooks) should be an AMD device library rather than an include file. This is the way AddressSanitizer's runtime library (\textbf{asanrtl}) is also setup.
+	\item \texttt{tsanrtl} \textbf{as a device library}: ThreadSanitizer's runtime library (containing all the hooks) should be an AMD device library rather than an include file. This is the way AddressSanitizer's runtime library (\texttt{asanrtl}) is also setup.
 	\item \textbf{Hooks}: Only a small subset of relevant hooks were implemented for the prototype. There are many more relevant hooks which should ideally be implemented. This is a non-trivial task since we cannot reuse the CPU implementation of these hooks either.
 	\item \textbf{Directly mapped memory}: Once ThreadSanitizer is implemented as a device library, it should also start using directly mapped memory. This would lead to faster execution and a more reliable sanitizer.
 	\item \textbf{Happens-before relations}: Happens-before relations should also be detected and used by the sanitizer. This is also a fairly involved task since it would require knowing the intricacies of how the runtime works, and what are the semantics of the HIP and AMDGCN.
